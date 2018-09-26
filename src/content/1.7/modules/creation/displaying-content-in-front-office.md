@@ -350,7 +350,7 @@ our template file:
 ```php
 public function hookDisplayLeftColumn($params)
 {
-    $this->context->smarty->assign(
+    $this->context->smarty->assign[
         [
             'my_module_name' => Configuration::get('MYMODULE_NAME'),
             'my_module_link' => $this->context->link->getModuleLink('mymodule', 'display'),
